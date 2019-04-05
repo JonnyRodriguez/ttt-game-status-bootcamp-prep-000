@@ -13,3 +13,7 @@ def won?(board)
   end
   FALSE
 end
+
+def full?(board)
+  board.none?{|i| board[i]==" "}
+end
