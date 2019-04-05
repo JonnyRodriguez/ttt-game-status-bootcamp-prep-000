@@ -16,4 +16,5 @@ end
 
 def full?(board)
   board.none? {|i| board[i]==" "}
+  TRUE
 end
