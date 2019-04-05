@@ -17,3 +17,8 @@ end
 def full?(board)
   board.none? {|c| c==" "}
 end
+
+def draw?(board)
+  full?(board) && !won?(board)
+end
+
