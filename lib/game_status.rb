@@ -26,7 +26,7 @@ def over?(board)
   won?(board) || draw?(board)
 end
 
-def winner?(board)
+def winner(board)
   won=won?(board)
   if won
     return board[won[0]]
