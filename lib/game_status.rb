@@ -15,6 +15,6 @@ def won?(board)
 end
 
 def full?(board)
-  board.none? {|i| board[i]==" "}
   return TRUE
+  #board.none? {|i| board[i]==" "}
 end
