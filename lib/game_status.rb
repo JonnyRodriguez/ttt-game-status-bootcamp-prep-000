@@ -8,8 +8,8 @@ WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
-    return combination if combination.all?{|i| board[i]=="X"}
-    return combination if combination.all?{|i| board[i]=="O"}
+    return combination if combination.all? {|i| board[i]=="X"}
+    return combination if combination.all? {|i| board[i]=="O"}
   end
   FALSE
 end
