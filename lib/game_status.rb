@@ -25,3 +25,12 @@ end
 def over?(board)
   won?(board) || draw?(board)
 end
+
+def winner?(board)
+  won=won?(board)
+  if won
+    return board[won[0]]
+  end
+  return nil
+end
+
